@@ -2,6 +2,9 @@ output "my_vpc_id" {
   value = aws_vpc.main.id
 }
 
+# output "vpc_output" {
+#   value = aws_vpc.main
+# }
 # output "azs"{
 #     value = data.aws_availability_zones.available
 # }
