@@ -16,3 +16,8 @@ data "aws_route_table" "default" {
     values = ["true"]
   }
 }
+
+ 
+data "aws_subnet_ids" "roboshop" {
+  vpc_id = var.vpc_id
+}

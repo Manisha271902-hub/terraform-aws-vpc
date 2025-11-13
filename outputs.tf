@@ -1,5 +1,5 @@
 output "my_vpc_id" {
-  value = aws_vpc.main
+  value = aws_vpc.main.id
 }
 
 # output "azs"{
@@ -16,14 +16,14 @@ output "public_subnet_ids"{
   value = aws_subnet.public_subs[*].id
 }
 
-# output "private_subnet_ids"{
-#   value = aws_subnet.private_subs.id
-# }
+output "private_subnet_ids"{
+  value = aws_subnet.private_subs[*].id
+}
 
 
-# output "database_subnet_ids"{
-#   value = aws_subnet.database_subs.id
-# }
+output "database_subnet_ids"{
+  value = aws_subnet.database_subs[*].id
+}
 
 
 #outputs ikad nundi pampistadi, manam module use chesteapud receive cheskovali
